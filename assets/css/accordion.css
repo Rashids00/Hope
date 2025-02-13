@@ -53,6 +53,11 @@
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-out;
+    padding-bottom: 16px;
+}
+
+.accordion-content.active {
+    margin-bottom: 16px; 
 }
 
 .accordion-content li, p {
@@ -85,6 +90,15 @@
 .accordion-a-item {
     border-bottom: 1px solid #eee;
     width: 100%;     /* Added to ensure full width */
+    margin-bottom: 16px;
+}
+
+.accordion-content:not(.active) {
+    padding-bottom: 0;
+}
+
+.accordion-content.active {
+    padding-bottom: 16px;
 }
 
 @media (max-width: 768px) {
