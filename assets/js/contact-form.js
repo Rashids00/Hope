@@ -23,7 +23,13 @@
 //             });
 //     });
 // });
-$(document).ready(function () {
+$(document).on('click touchstart', 'form', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    return false;
+  });
+
+  $(document).ready(function () {
     // Ensure EmailJS is initialized
     try {
         emailjs.init("BPCfl3aDRifrpftPf"); // Replace with your EmailJS Public Key
