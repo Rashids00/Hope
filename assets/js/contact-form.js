@@ -23,6 +23,11 @@
 //             });
 //     });
 // });
+$(document).on('click touchstart', 'form', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    return false;
+  });
 
 $(document).ready(function () {
     // Ensure EmailJS is initialized
