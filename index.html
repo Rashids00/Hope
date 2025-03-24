@@ -703,10 +703,7 @@
 </div>
 
 <div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-8">
-    <h1>REQUEST A SERVICE</h1>
-        
+    <h2>REQUEST A SERVICE</h2>
     <form id="serviceRequestForm">
         <div class="form-row">
             <div class="form-group">
@@ -731,7 +728,7 @@
                 <input type="text" class="form-control" id="petName" name="petName" placeholder="PET NAME">
             </div>
             <div class="form-group">
-                <select class="form-control" id="appointmentReason" name="appointmentReason" required>
+                <select class="form-control-select" id="appointmentReason" name="appointmentReason" required>
                     <option value="" disabled selected>APPOINTMENT REASON*</option>
                     <option value="Check-up">Regular Check-up</option>
                     <option value="Vaccination">Vaccination</option>
@@ -746,7 +743,7 @@
         
         <div class="form-row">
             <div class="form-group" style="flex: 100%;">
-                <select class="form-control" id="firstTimeClient" name="firstTimeClient" required>
+                <select class="form-control-select" id="firstTimeClient" name="firstTimeClient" required>
                     <option value="" disabled selected>FIRST TIME CLIENT DEAL*</option>
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
@@ -755,13 +752,12 @@
         </div>
         
         <div class="btn-container">
-            <div class="g-recaptcha" data-sitekey="6LctIf4qAAAAABaY1IqAJg-7Lx3qM0XGnCEveblR"></div>
+            <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
             <button type="submit" class="submit-btn">Submit</button>
         </div>
     </form>
 </div>
-</div>
-</div>
+
 
 </main>
 <footer>
@@ -876,8 +872,8 @@ Copyright &copy; All rights reserved | Hope Animal Clinic, Canton MI USA
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<script src="assets/js/contact-form.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="assets/js/contact-form.js"></script>
 
 <script src="assets/js/jquery.slicknav.min.js"></script>
 
